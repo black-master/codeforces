@@ -2,7 +2,7 @@
 Author : Zubayer Rahman
 Email  : zubayer.csesust@gmail.com
 CPU    : 0.015s
-Memory : 0
+Memory : 0KB
 */
 
 #include<bits/stdc++.h>
