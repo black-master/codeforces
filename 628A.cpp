@@ -1,24 +1,27 @@
 /**
-Author : Zubayer Rahman
-Email  : zubayer.csesust@gmail.com
-CPU    : 0.03s
-Memory : 0KB
+Online Judge : CodeForces
+Problem No   : 628A
+Problem Name : Tennis Tournament
+Author       : Zubayer Rahman
+Email        : zubayer.csesust@gmail.com
+Time Limit   : 1.000s
+CPU          : 0.015s
+Memory       : 0KB
+Algorithm    : Implementation
 */
 
-#include<iostream>
-#include<cmath>
-#include<algorithm>
+#include<bits/stdc++.h>
 
 using namespace std;
 
 int main()
 {
-    long long n,b,p;
+    long long n, b, p;
 
     while(cin>>n>>b>>p)
     {
-        long long towel,bottle,match=0,m,x,temp;
-        double y,k;
+        long long towel, bottle, match=0, m, x, temp;
+        double y, k;
 
         towel=n*p;
         bottle=(2*b)+1;
@@ -33,7 +36,7 @@ int main()
             x=y;
             y=x;
 
-            k=pow(2.0,y);
+            k=pow(2.0, y);
             x=k;
 
             match+=(x/2);

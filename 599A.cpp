@@ -1,8 +1,13 @@
 /**
-Author : Zubayer Rahman
-Email  : zubayer.csesust@gmail.com
-CPU    : 0.015s
-Memory : 0KB
+Online Judge : CodeForces
+Problem No   : 599A
+Problem Name : Patrick and Shopping
+Author       : Zubayer Rahman
+Email        : zubayer.csesust@gmail.com
+Time Limit   : 1.000s
+CPU          : 0.015s
+Memory       : 0KB
+Algorithm    : Implementation
 */
 
 #include<bits/stdc++.h>
@@ -13,7 +18,7 @@ vector<int> vc;
 
 int main()
 {
-    long long d1,d2,d3,res1,res2,res3,res4;
+    long long d1, d2, d3, res1, res2, res3, res4;
 
     while(cin>>d1>>d2>>d3)
     {
@@ -35,7 +40,7 @@ int main()
         res4=d1+d2+d3;
         vc.push_back(res4);
 
-        sort(vc.begin(),vc.end());
+        sort(vc.begin(), vc.end());
 
         cout<<vc[0]<<endl;
 

@@ -1,30 +1,29 @@
 /**
-Author : Zubayer Rahman
-Email  : zubayer.csesust@gmail.com
-CPU    : 0.499s
-Memory : 6600KB
+Online Judge : CodeForces
+Problem No   : 599B
+Problem Name : Spongebob and Joke
+Author       : Zubayer Rahman
+Email        : zubayer.csesust@gmail.com
+Time Limit   : 2.000s
+CPU          : 0.311s
+Memory       : 6700KB
+Algorithm    : Implementation
 */
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
-#include<iostream>
-#include<vector>
-#include<map>
-#include<algorithm>
+#include<bits/stdc++.h>
 
 using namespace std;
 
 vector<int> v;
-map<int,vector<int> > mp;
+map<int, vector<int> > mp;
 
 int main()
 {
-    int n,m,i,j,k;
+    int n, m, i, j, k;
 
     while(cin>>n>>m)
     {
-        bool pk=true,amb=false;
+        bool pk=true, amb=false;
         int _count=0;
 
         for(i=1; i<=n; i++)

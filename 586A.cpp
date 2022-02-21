@@ -1,14 +1,16 @@
 /**
-Author : Zubayer Rahman
-Email  : zubayer.csesust@gmail.com
-CPU    : 0.031s
-Memory : 0KB
+Online Judge : CodeForces
+Problem No   : 586A
+Problem Name : Alena's Schedule
+Author       : Zubayer Rahman
+Email        : zubayer.csesust@gmail.com
+Time Limit   : 1.000s
+CPU          : 0.015s
+Memory       : 0KB
+Algorithm    : Implementation
 */
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<iostream>
-#include<algorithm>
+#include<bits/stdc++.h>
 
 #define MAX 105
 
@@ -18,11 +20,11 @@ int ara[MAX];
 
 int main()
 {
-    int n,a;
+    int n, a;
     int hour;
     int i;
-    int start,finish;
-    bool flag,stop;
+    int start, finish;
+    bool flag, stop;
     int zero;
 
     while(cin>>n)

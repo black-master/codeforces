@@ -1,17 +1,16 @@
 /**
-Author : Zubayer Rahman
-Email  : zubayer.csesust@gmail.com
-CPU    : 0.717s
-Memory : 24800KB
+Online Judge : CodeForces
+Problem No   : 598D
+Problem Name : Igor In the Museum
+Author       : Zubayer Rahman
+Email        : zubayer.csesust@gmail.com
+Time Limit   : 1.000s
+CPU          : 0.624s
+Memory       : 25000KB
+Algorithm    : DFS
 */
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
-#include<iostream>
-#include<map>
-#include<queue>
-#include<algorithm>
+#include<bits/stdc++.h>
 
 using namespace std;
 
@@ -21,48 +20,45 @@ int visit[1010][1010];
 class Sample
 {
 public:
-    int x,y,id;
+    int x, y, id;
 
-    Sample(int x,int y,int id)
+    Sample(int x, int y, int id)
     {
         this->x=x;
         this->y=y;
         this->id=id;
     }
 
-    Sample()
-    {
-
-    }
+    Sample(){}
 };
 
 Sample box[1010][1010];
-map<int,int> mp;
+map<int, int> mp;
 
 void reset()
 {
-    int i,j;
+    int i, j;
 
     for(i=0; i<1010; i++)
         for(j=0; j<1010; j++)
             visit[i][j]=0;
 }
 
-int dx[]= {+1,-1,0,0};
-int dy[]= {0,0,+1,-1};
+int dx[]= {+1, -1, 0, 0};
+int dy[]= {0, 0, +1, -1};
 
 queue<Sample> q;
 
 int main()
 {
-    int n,m,k;
+    int n, m, k;
 
     while(cin>>n>>m>>k)
     {
 
         reset();
 
-        int i,j,compID=0,p,xx,yy;
+        int i, j, compID=0, p, xx, yy;
 
         for(i=0; i<n; i++)
             scanf("%s", matrix[i]);
@@ -77,7 +73,7 @@ int main()
                     box[i][j].y=j;
                     box[i][j].id=++compID;
 
-                    q.push(Sample(i,j,compID));
+                    q.push(Sample(i, j, compID));
 
                     Sample samp;
 
@@ -109,7 +105,7 @@ int main()
                                         box[xx][yy].x=xx;
                                         box[xx][yy].y=yy;
                                         box[xx][yy].id=samp.id;
-                                        q.push(Sample(xx,yy,samp.id));
+                                        q.push(Sample(xx, yy, samp.id));
                                     }
                                 }
                             }

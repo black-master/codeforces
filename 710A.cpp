@@ -1,27 +1,28 @@
 /**
-Author : Zubayer Rahman
-Email  : zubayer.csesust@gmail.com
-CPU    : 0.015s
-Memory : 0KB
+Online Judge : CodeForces
+Problem No   : 710A
+Problem Name : King Moves
+Author       : Zubayer Rahman
+Email        : zubayer.csesust@gmail.com
+Time Limit   : 1.000s
+CPU          : 0.015s
+Memory       : 0KB
+Algorithm    : Implementation
 */
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<iostream>
-#include<algorithm>
+#include<bits/stdc++.h>
 
 using namespace std;
 
-int dx[]= {1,1,1,-1,-1,-1,0,0};
-int dy[]= {0,1,-1,0,1,-1,1,-1};
+int dx[]= {1, 1, 1, -1, -1, -1, 0, 0};
+int dy[]= {0, 1, -1, 0, 1, -1, 1, -1};
 
 int main()
 {
     char str[2];
-    int c,d;
+    int c, d;
     int i;
-    int x,y;
+    int x, y;
     int result;
 
     while(cin>>str)
