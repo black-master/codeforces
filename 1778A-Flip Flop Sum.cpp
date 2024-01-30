@@ -1,7 +1,7 @@
 /**
 Online Judge : CodeForces
 Problem No   : 1778A
-Problem Name : Drinks
+Problem Name : Flip Flop Sum
 Author       : Zubayer Rahman
 Email        : zubayer.csesust@gmail.com
 Time Limit   : 1.000s
